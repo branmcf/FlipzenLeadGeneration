@@ -12,6 +12,7 @@ class LandingComponent extends Component {
         email: '',
         showSuccessAlert: false,
         showFailureAlert: false,
+        showFailureAlert2: false,
         visible: true,
         disabled : false
     };
@@ -48,10 +49,18 @@ class LandingComponent extends Component {
     this.setState({disabled: true});
     this.setState({ showSuccessAlert: false })
     this.setState({ showFailureAlert: false })
+    this.setState({ showFailureAlert2: false })
     this.setState({ visible: true });
+
+    if (this.state.email === '') {
+      this.setState({ showFailureAlert2: true })
+      this.setState({ disabled: false })
+      return
+    }
+
     try {
-      // let result = await axios.post('https://flipzen-api.herokuapp.com/addLead', this.state);
-      let result = await axios.post('http://localhost:5000/addLead', this.state);
+      let result = await axios.post('https://flipzen-api.herokuapp.com/addLead', this.state);
+      // let result = await axios.post('http://localhost:5000/addLead', this.state);
       if (result.status === 200){
         this.setState({ showSuccessAlert: true })
         this.setState({ disabled: false })
@@ -71,6 +80,10 @@ class LandingComponent extends Component {
   
   renderFailureAlert() {
     return <div style={{width:"100%", position:"absolute"}}><Alert className="custom-alert" color="danger" isOpen={this.state.visible} toggle={this.onDismiss}>There was an error submitting your contact information - please try again.</Alert></div>
+  }
+
+  renderFailureAlert2() {
+    return <div style={{width:"100%", position:"absolute"}}><Alert className="custom-alert" color="danger" isOpen={this.state.visible} toggle={this.onDismiss}>Please provide an email address</Alert></div>
   }
 
   // renderFailureAlert() {
@@ -123,13 +136,14 @@ class LandingComponent extends Component {
 
         {this.state.showSuccessAlert && this.renderSuccessAlert()}
         {this.state.showFailureAlert && this.renderFailureAlert()}
+        {this.state.showFailureAlert2 && this.renderFailureAlert2()}
 
 
         <div className="jumbotron jumbotron-fluid vertical-center landing-jumbo" style={{height:"88vh", marginBottom:"0px"}}>
           <div className="container">
             <h1 className="display-4 main-copy" style={{textAlign:"center", color:'#FFFFFF', textTransform:'uppercase', fontSize:"3.5rem"}}>Find underpriced products<br/>being sold online</h1>
             {/* <h3 className="sub-copy" style={{textAlign:"center", color:'#FFFFFF'}}>Product price analytics for buy-and-sell enterprises</h3> */}
-            <h3 className="sub-copy" style={{textAlign:"center", color:'#FFFFFF'}}>We collect product price data from multiple online marketplaces into <br/>one convenient dashboard to help you find your next flip</h3>
+            <h3 className="sub-copy" style={{textAlign:"center", color:'#FFFFFF'}}>We collect product listing data from multiple online marketplaces into <br/>one convenient dashboard to help you find your next flip</h3>
             <Form inline autoComplete="off" className="wl-form" onSubmit={this.handleSubmit} id="lead-form" style={{display: 'flex', justifyContent: 'center'}}>
               <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
                 {/* <Label for="exampleEmail" className="mr-sm-2">Email</Label> */}
