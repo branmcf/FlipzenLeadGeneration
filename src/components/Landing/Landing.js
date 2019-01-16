@@ -128,7 +128,8 @@ class LandingComponent extends Component {
         <div className="jumbotron jumbotron-fluid vertical-center landing-jumbo" style={{height:"88vh", marginBottom:"0px"}}>
           <div className="container">
             <h1 className="display-4 main-copy" style={{textAlign:"center", color:'#FFFFFF', textTransform:'uppercase', fontSize:"3.5rem"}}>Find underpriced products<br/>being sold online</h1>
-            <h3 className="sub-copy" style={{textAlign:"center", color:'#FFFFFF'}}>Product price analytics for buy-and-sell enterprises</h3>
+            {/* <h3 className="sub-copy" style={{textAlign:"center", color:'#FFFFFF'}}>Product price analytics for buy-and-sell enterprises</h3> */}
+            <h3 className="sub-copy" style={{textAlign:"center", color:'#FFFFFF'}}>We collect product price data from multiple online marketplaces into <br/>one convenient dashboard to help you find your next flip</h3>
             <Form inline autoComplete="off" className="wl-form" onSubmit={this.handleSubmit} id="lead-form" style={{display: 'flex', justifyContent: 'center'}}>
               <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
                 {/* <Label for="exampleEmail" className="mr-sm-2">Email</Label> */}
