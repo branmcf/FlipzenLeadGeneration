@@ -1,0 +1,43 @@
+@font-face {
+    font-family: "Brandon Grotesque";
+    src: url("../../assets/fonts/brandon-grotesque-black.otf"),
+    url("../../assets/fonts/brandon-grotesque-black.otf") format("opentype"),
+    url("../../assets/fonts/brandon-grotesque-black-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @import url('https://fonts.googleapis.com/css?family=Lato');
+
+.login-jumbo{
+    height: 88vh;
+    margin-bottom: 0 !important;
+    /* background:linear-gradient(0deg, #3358f4 0%, #1d8cf8 100%) */
+    background: #FFFFFF !important;
+
+}
+
+.Aligner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+}
+
+.Aligner-item {
+    width: 60%;
+    height:50%;
+}
+
+.brandon-font {
+    font-family: 'Brandon Grotesque', sans-serif;
+}
+
+.login-input {
+    background: #FFFFFF !important;
+    border: 2px solid #F1F1F1 !important;
+    width: 60% !important;
+    border-radius: 0px !important;
+    margin: auto;
+    margin-bottom: 3%;
+}

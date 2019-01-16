@@ -1,0 +1,110 @@
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+@font-face {
+  font-family: "Brandon Grotesque";
+  src: url("../../assets/fonts/brandon-grotesque-black.otf"),
+  url("../../assets/fonts/brandon-grotesque-black.otf") format("opentype"),
+  url("../../assets/fonts/brandon-grotesque-black-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+
+.vertical-center {
+    min-height: 88%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 88vh; /* These two lines are counted as one :-)       */
+  
+    display: flex;
+    align-items: center;
+  }
+  
+  .custom-alert {
+    margin-bottom: 0px !important;
+    text-align: center;
+    width: 100%;
+    border-radius: 0px !important;
+  }
+  
+  .wl-btn{
+    /* background: #FF7957 !important; */
+    /* border: 1px solid #FF7957 !important; */
+    /* height: 3rem; */
+    /* margin-top: 2%; */
+    min-width: 10%;
+    background: #f88379 !important;
+    background-color: #f88379 !important;
+    border-radius: 5px !important;
+    border: 0;
+    box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08) !important;
+    cursor: pointer;
+    /* font-family: 'Roboto', sans-serif; */
+  }
+
+  .wl-btn:hover{
+    background: #f88379 !important;
+    background-color: #f88379 !important;
+  }
+
+  .wl-btn:focus{
+    background: #f88379 !important;
+    background-color: #f88379 !important;
+  }
+  
+  .wl-input {
+    /* min-width: 100% !important; */
+    min-width: 17vw;;
+    background: rgba(255,255,255,0.5) !important;
+    border: none !important;
+    /* color: #A2A3A4; */
+    /* font-family: 'Roboto', sans-serif; */
+  }
+
+  .wl-input:focus {
+    border: 1px solid white;
+    background: white !important;
+  }
+
+
+
+  .main-copy {
+    font-family: 'Brandon Grotesque', sans-serif;
+    /* margin-bottom: 0px; */
+  }
+
+  .sub-copy{
+    font-family: 'Lato', sans-serif;
+  }
+  

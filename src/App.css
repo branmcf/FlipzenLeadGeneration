@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -29,4 +29,38 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+
+.vertical-center {
+  min-height: 88%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 88vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+
+.custom-alert {
+  margin-bottom: 0px !important;
+  text-align: center;
+  width: 100%;
+  border-radius: 0px !important;
+}
+
+.wl-btn{
+  /* background: #FF7957 !important; */
+  /* border: 1px solid #FF7957 !important; */
+  /* height: 3rem; */
+  /* margin-top: 2%; */
+  min-width: 10%;
+  /* font-family: 'Roboto', sans-serif; */
+}
+
+.wl-input {
+  /* min-width: 100% !important; */
+  min-width: 17vw;;
+  /* background: white !important; */
+  /* border: 1px solid white; */
+  /* color: #A2A3A4; */
+  /* font-family: 'Roboto', sans-serif; */
 }

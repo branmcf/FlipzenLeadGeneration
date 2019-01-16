@@ -1,0 +1,68 @@
+.vertical-center {
+    min-height: 88%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 88vh; /* These two lines are counted as one :-)       */
+  
+    display: flex;
+    align-items: center;
+  }
+  
+  .custom-alert {
+    margin-bottom: 0px !important;
+    text-align: center;
+    width: 100%;
+    border-radius: 0px !important;
+  }
+  
+  .wl-btn{
+    /* background: #FF7957 !important; */
+    /* border: 1px solid #FF7957 !important; */
+    /* height: 3rem; */
+    /* margin-top: 2%; */
+    min-width: 10%;
+    background: #f88379 !important;
+    background-color: #f88379 !important;
+    border-radius: 5px !important;
+    border: 0;
+    box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08) !important;
+    cursor: pointer;
+    /* font-family: 'Roboto', sans-serif; */
+  }
+
+  .wl-btn:hover{
+    background: #E2786E !important;
+    background-color: #E2786E !important;
+  }
+
+  .wl-btn:focus{
+    background: #E2786E !important;
+    background-color: #E2786E !important;
+  }
+  
+  .wl-input {
+    /* min-width: 100% !important; */
+    min-width: 17vw;;
+    background: rgba(255,255,255,0.5) !important;
+    border: none !important;
+    /* color: #A2A3A4; */
+    /* font-family: 'Roboto', sans-serif; */
+  }
+
+  .wl-input:focus {
+    border: 1px solid white;
+    background: white !important;
+  }
+
+
+
+  .main-copy {
+    font-family: 'Brandon Grotesque', sans-serif;
+    /* margin-bottom: 0px; */
+  }
+
+  .sub-copy{
+    font-family: 'Lato', sans-serif;
+  }
+
+  .landing-jumbo {
+    background:linear-gradient(0deg, #3358f4 0%, #1d8cf8 100%)
+  }
