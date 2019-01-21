@@ -124,8 +124,8 @@
 
 /* CUSTOM STYLES PLS WORK */
 .vertical-center {
-  min-height: 88%;  /* Fallback for browsers do NOT support vh unit */
-  min-height: 88vh; /* These two lines are counted as one :-)       */
+  min-height: 80%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 80vh; /* These two lines are counted as one :-)       */
 
   display: flex;
   align-items: center;
@@ -192,3 +192,15 @@
 .landing-jumbo {
   background:linear-gradient(0deg, #3358f4 0%, #1d8cf8 100%)
 }
+
+.color-black h1, h2, p{
+  color: black !important;
+}
+
+/* .clipped {
+  clip-path: polygon(100% 0%, 100% 70%, 50% 90%, 50% 90%, 0 70%, 0 0);
+} */
+
+/* p .color-black {
+  color: black !important;
+} */
