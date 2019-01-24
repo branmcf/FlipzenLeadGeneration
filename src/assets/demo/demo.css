@@ -190,12 +190,19 @@
 }
 
 .landing-jumbo {
-  background:linear-gradient(0deg, #3358f4 0%, #1d8cf8 100%)
+  background:linear-gradient(0deg, #3358f4 0%, #1d8cf8 100%);
+  
+  /* background: linear-gradient(to bottom, rgba(51,88,244,0.3) 0%, rgba(51,88,244, 0.4) 10%, rgba(51,88,244, 0.5) 20%,rgba(51,88,244, 0.6) 40%, rgba(51,88,244, 0.8) 60%,rgba(51,88,244, 1) 100%), url("../img/market0.jpg") no-repeat center center fixed; */
+}
+.color-white h1, h2, h3, p{
+  color: white !important;
 }
 
-.color-black h1, h2, p{
+
+.color-black h1, h2, p, strong, li, .h1, .h2, .p{
   color: black !important;
 }
+
 
 /* .clipped {
   clip-path: polygon(100% 0%, 100% 70%, 50% 90%, 50% 90%, 0 70%, 0 0);

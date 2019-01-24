@@ -107,4 +107,8 @@
   .sub-copy{
     font-family: 'Lato', sans-serif;
   }
+
+  .f-box-shadow {
+    box-shadow:0 .3125rem .875rem 0 rgba(129,129,129,.2)!important
+  }
   

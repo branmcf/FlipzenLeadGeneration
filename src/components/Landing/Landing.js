@@ -6,6 +6,11 @@ import axios from 'axios';
 import search from '../../assets/img/search.svg'
 import money from '../../assets/img/dollar-sign.svg'
 import chart from '../../assets/img/bar-chart.svg'
+import chrome from '../../assets/img/FlipZen_mockup_v0.png'
+import bell from '../../assets/img/bell.svg'
+import db from '../../assets/img/database.svg'
+import cloud from '../../assets/img/cloud.svg'
+
 
 class LandingComponent extends Component {
   constructor() {
@@ -147,7 +152,7 @@ class LandingComponent extends Component {
             <h1 className="display-4 main-copy" style={{textAlign:"center", color:'#FFFFFF', textTransform:'uppercase', fontSize:"3.5rem"}}>Find underpriced products<br/>being sold online</h1>
             {/* <h3 className="sub-copy" style={{textAlign:"center", color:'#FFFFFF'}}>Product price analytics for buy-and-sell enterprises</h3> */}
             <h3 className="sub-copy" style={{textAlign:"center", color:'#FFFFFF'}}>We collect and analyze product listings from online marketplaces <br/>to create a dashboard that makes finding your next flip easy.</h3>
-            <h3 className="sub-copy" style={{textAlign:"center", color:'#FFFFFF'}}>It's like Kayak – for products.</h3>
+            {/* <h3 className="sub-copy" style={{textAlign:"center", color:'#FFFFFF'}}>It's like Kayak – for products.</h3> */}
             <Form inline autoComplete="off" className="wl-form" onSubmit={this.handleSubmit} id="lead-form" style={{display: 'flex', justifyContent: 'center'}}>
               <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
                 {/* <Label for="exampleEmail" className="mr-sm-2">Email</Label> */}
@@ -170,58 +175,141 @@ class LandingComponent extends Component {
             <div class="row text-center">
               <div class="col-12 col-md-8 m-auto col-lg-4">
                 <div class="fdb-box fdb-touch color-black">
-                  <img alt="image" class="fdb-icon" src={search}/>
+                  <img alt="search icon" class="fdb-icon" src={search}/>
                   <h2>Search</h2>
-                  <p>Far far away, behind the word mountains, far from the countries.</p>
+                  {/* <p>Far far away, behind the word mountains, far from the countries.</p> */}
+                  <p>Search multiple online marketplaces at once and view the results in a single dashboard.</p>
                 </div>
               </div>
 
               <div class="col-12 col-md-8 m-auto col-lg-4 pt-5 pt-lg-0">
                 <div class="fdb-box fdb-touch color-black">
-                  <img alt="image" class="fdb-icon" src={chart}/>
+                  <img alt="chart icon" class="fdb-icon" src={chart}/>
                   <h2>Analyze</h2>
-                  <p>Separated they live in Bookmarksgrove right at the coast.</p>
+                  {/* <p>Use FlipZen's data analysis toolsMean, median, mode, standard deviation, and supply/demand data.</p> */}
+                  <p>Take a data-driven approach to flipping by leverging FlipZen's built-in data analysis tools.</p>
                 </div>
               </div>
 
               <div className="col-12 col-md-8 m-auto col-lg-4 pt-5 pt-lg-0">
                 <div className="fdb-box fdb-touch color-black">
-                  <img alt="image" className="fdb-icon" src={money}/>
-                  <h2 classname="color-black">Profit</h2>
-                  <p>A small river named Duden flows by their place and supplies.</p>
+                  <img alt="money icon" className="fdb-icon" src={money}/>
+                  <h2 classname="color-black">Win</h2>
+                  <p>Identify more high quality arbitrage opportunities in less time and with less effort.</p>
                 </div>
               </div>
             </div>
           </div>
         </section>
-        {/* <section class="fdb-block" data-block-type="testimonials" data-id="13" draggable="true">
-          <div class="container">
-            <div class="row align-items-center justify-content-center">
-              <div class="col-12 col-md-10 col-lg-8">
-                <p class="lead">
-                  "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean."
-                </p>
 
-                <p class="lead"><strong>Person Name</strong> <em class="ml-4">Co-founder at Company</em></p>
+        <section class="fdb-block" data-block-type="features" data-id="2" draggable="true">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-12 text-center">
+                <h1 className="sub-copy" style={{color:"black"}}>Features</h1>
               </div>
-              <div class="col-8 col-sm-6 col-md-2 col-lg-3 col-xl-2 mt-4 mt-md-0 ml-auto mr-auto mr-md-0">
-                <img alt="image" class="img-fluid rounded-circle" src="https://cdn.jsdelivr.net/gh/froala/design-blocks@2.0.1/dist/imgs//people/1.jpg"/>
+            </div>
+
+            {/* <div class="row text-center mt-5">
+              <div class="col-12 col-sm-4">
+                <img alt="" class="fdb-icon" src="https://cdn.jsdelivr.net/gh/froala/design-blocks@2.0.1/dist/imgs//icons/gift.svg"/>
+                <h3><strong>Feature One</strong></h3>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts</p>
+              </div>
+
+              <div class="col-12 col-sm-4 pt-4 pt-sm-0">
+                <img alt="" class="fdb-icon" src="https://cdn.jsdelivr.net/gh/froala/design-blocks@2.0.1/dist/imgs//icons/cloud.svg"/>
+                <h3><strong>Feature Two</strong></h3>
+                <p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. </p>
+              </div>
+
+              <div class="col-12 col-sm-4 pt-4 pt-sm-0">
+                <img alt="" class="fdb-icon" src="https://cdn.jsdelivr.net/gh/froala/design-blocks@2.0.1/dist/imgs//icons/layers.svg"/>
+                <h3><strong>Feature Three</strong></h3>
+                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country,</p>
+              </div>
+            </div> */}
+
+            <div class="row mt-5 justify-content-center">
+              <div class="col-10">
+                <img alt="mockup pic" class="img-fluid f-box-shadow" src={chrome}/>
+              </div>
+            </div>
+
+            <div class="row text-center mt-5">
+              <div class="col-12 col-sm-4">
+                <img alt="cloud icon" class="fdb-icon" src={cloud}/>
+                <h3><strong>Hosted in the cloud</strong></h3>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts</p>
+              </div>
+
+              <div class="col-12 col-sm-4 pt-4 pt-sm-0">
+                <img alt="db icon" class="fdb-icon" src={db}/>
+                <h3><strong>Save searches</strong></h3>
+                <p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. </p>
+              </div>
+
+              <div class="col-12 col-sm-4 pt-4 pt-sm-0">
+                <img alt="bell icon" class="fdb-icon" src={bell}/>
+                <h3><strong>Set alerts</strong></h3>
+                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country,</p>
               </div>
             </div>
           </div>
-        </section> */}
-        {/* <section class="fdb-block" style={{backgroundImage:"url(https://cdn.jsdelivr.net/gh/froala/design-blocks@2.0.1/dist/imgs//shapes/8.svg);"}} data-block-type="pricings" data-id="8" draggable="true">
+        </section>
+
+        <section class="fdb-block" data-block-type="testimonials" data-id="13" draggable="true">
+          <div class="container">
+           <div class="row justify-content-center">
+              <div class="col-12 text-center">
+                <h1 className="sub-copy" style={{color:"black"}}>Testimonials</h1>
+              </div>
+            </div>
+
+            <div class="row align-items-center justify-content-center">
+              <div class="col-8 col-sm-6 col-md-2 col-lg-3 col-xl-2 mt-4 mt-md-0 mr-auto mr-md-0">
+                  <img alt="person" class="img-fluid rounded-circle" src="https://cdn.jsdelivr.net/gh/froala/design-blocks@2.0.1/dist/imgs//people/1.jpg"/>
+                </div>
+                <div class="col-12 col-md-10 col-lg-8">
+                  <p class="lead">
+                    "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean."
+                  </p>
+
+                  <p class="lead"><strong>Lauren Williams</strong> <em class="ml-4">Alpha release user</em></p>
+                </div>
+              </div>
+
+
+              <div className="row align-items-center justify-content-center mt-5">
+                <div class="col-8 col-sm-6 col-md-2 col-lg-3 col-xl-2 mt-4 mt-md-0 mr-auto mr-md-0">
+                  <img alt="person" class="img-fluid rounded-circle" src="https://cdn.jsdelivr.net/gh/froala/design-blocks@2.0.1/dist/imgs//people/1.jpg"/>
+                </div>
+                <div class="col-12 col-md-2 col-lg-8">
+                  <p class="lead">
+                    "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean."
+                  </p>
+
+                  <p class="lead"><strong>Nathaniel Mendoza</strong> <em class="ml-4">Alpha release user</em></p>
+                </div>
+              </div>
+
+          </div>
+        </section>
+        <section class="fdb-block" style={{backgroundImage:"url(https://cdn.jsdelivr.net/gh/froala/design-blocks@2.0.1/dist/imgs//shapes/8.svg);"}} data-block-type="pricings" data-id="8" draggable="true">
           <div class="container">
             <div class="row text-center">
               <div class="col">
-                <h1>Pricing Plans</h1>
+                <h1 className="sub-copy" style={{color:"black"}}>Pricing Plans</h1>
               </div>
             </div>
 
             <div class="row mt-5 align-items-center no-gutters">
+
+
+
               <div class="col-12 col-sm-10 col-md-8 m-auto col-lg-4 text-center shadow">
                 <div class="bg-white pb-5 pt-5 pl-4 pr-4 rounded-left">
-                  <h2 class="font-weight-light">Basic</h2>
+                  <h2 class="font-weight-light">Hobby</h2>
 
                   <p class="h1 mt-5 mb-5"><strong>$19</strong> <span class="h4">/month</span></p>
 
@@ -253,9 +341,9 @@ class LandingComponent extends Component {
 
               <div class="col-12 col-sm-10 col-md-8 ml-auto mr-auto col-lg-4 text-center mt-4 mt-lg-0 shadow">
                 <div class="bg-white pb-5 pt-5 pl-4 pr-4 rounded-right">
-                  <h2 class="font-weight-light">OEM</h2>
+                  <h2 class="font-weight-light">Enterprise</h2>
 
-                  <p class="h1 mt-5 mb-5"><strong>$99</strong> <span class="h4">/month</span></p>
+                  <p class="h1 mt-5 mb-5"><strong clasName="color-black">$99</strong> <span class="h4">/month</span></p>
 
                   <ul class="text-left">
                     <li>Item 1</li>
@@ -266,11 +354,16 @@ class LandingComponent extends Component {
                   <p class="text-center pt-4"><a href="https://www.froala.com" class="btn btn-outline-dark">Choose Plan</a></p>
                 </div>
               </div>
+
+
+
+
+
             </div>
           </div>
-        </section> */}
+        </section>
         {/* Footer */}
-        <div className="row" style={{background: "#3358f4", textAlign: "center", color:"#FFFFFF", height:"5vh", lineHeight: "5vh", maxWidth:"100vw", margin:"0px"}}>
+        <div className="row" style={{background: "#3358f4", textAlign: "center", color:"#FFFFFF", height:"8vh", lineHeight: "8vh", maxWidth:"100vw", margin:"0px"}}>
           <div className="col-12">&copy;  2019 FlipZen, All rights reserved</div>
         </div>
         
