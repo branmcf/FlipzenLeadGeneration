@@ -9,8 +9,10 @@ import money from '../../assets/img/dollar-sign.svg'
 import chart from '../../assets/img/bar-chart.svg'
 // import chrome0 from '../../assets/img/FlipZen_mockup_v0.png'
 import chrome1 from '../../assets/img/FlipZen_mockup_v1.png'
-import nate from '../../assets/img/nate_fz.png'
-import lauren from '../../assets/img/lauren_fz_2.png'
+// import nate from '../../assets/img/nate_fz.png'
+// import lauren from '../../assets/img/lauren_fz_2.png'
+import mike from '../../assets/img/mike.jpg'
+import emily from '../../assets/img/emilyz.jpg'
 import bell from '../../assets/img/bell.svg'
 import db from '../../assets/img/database.svg'
 import cloud from '../../assets/img/cloud.svg'
@@ -278,7 +280,7 @@ class LandingComponent extends Component {
 
             <div class="row align-items-center justify-content-center">
               <div class="col-8 col-sm-6 col-md-2 col-lg-3 col-xl-2 mt-4 mt-md-0 mr-auto mr-md-0">
-                  <img alt="person" class="img-fluid rounded-circle" src={lauren}/>
+                  <img alt="person" class="img-fluid rounded-circle" src={emily}/>
                 </div>
                 <div class="col-12 col-md-10 col-lg-8">
                   <p class="lead">
@@ -292,7 +294,7 @@ class LandingComponent extends Component {
 
               <div className="row align-items-center justify-content-center mt-5">
                 <div class="col-8 col-sm-6 col-md-2 col-lg-3 col-xl-2 mt-4 mt-md-0 mr-auto mr-md-0">
-                  <img alt="person" class="img-fluid rounded-circle" src={nate}/>
+                  <img alt="person" class="img-fluid rounded-circle" src={mike}/>
                 </div>
                 <div class="col-12 col-md-2 col-lg-8">
                   <p class="lead">
