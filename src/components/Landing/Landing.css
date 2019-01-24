@@ -82,6 +82,76 @@
     background: #f88379 !important;
     background-color: #f88379 !important;
   }
+
+  .wl-btn::active:hover{
+    background: #f88379 !important;
+    background-color: #f88379 !important;
+  }
+
+  .wl-btn:active:focus{
+    background: #f88379 !important;
+    background-color: #f88379 !important;
+  }
+
+  .btn.wl-btn:active{
+    background: #f88379 !important;
+    background-color: #f88379 !important;
+  }
+
+  .buy-btn{
+    /* background: #FF7957 !important; */
+    /* border: 1px solid #FF7957 !important; */
+    /* height: 3rem; */
+    /* margin-top: 2%; */
+    min-width: 10%;
+    background: white !important;
+    background-color: white !important;
+    border: 1px solid #3358f4 !important;
+    border-radius: 5px !important;
+    color: #3358f4 !important;
+    border: 0;
+    box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08) !important;
+    cursor: pointer;
+    /* font-family: 'Roboto', sans-serif; */
+  }
+
+  .buy-btn:hover{
+    /* background: #f88379 !important;
+    background-color: #f88379 !important; */
+
+    background: #3358f4 !important;
+    background-color: #3358f4 !important;
+    border: 1px solid #3358f4 !important;
+    color: white !important;
+  }
+
+  .buy-btn:focus{
+    background: #3358f4 !important;
+    background-color: #3358f4 !important;
+    border: 1px solid #3358f4 !important;
+    color: white !important;
+  }
+
+  .buy-btn:active{
+    background: #3358f4 !important;
+    background-color: #3358f4 !important;
+    border: 1px solid #3358f4 !important;
+    color: white !important;
+  }
+
+  .buy-btn:active:hover{
+    background: #3358f4 !important;
+    background-color: #3358f4 !important;
+    border: 1px solid #3358f4 !important;
+    color: white !important;
+  }
+  
+  .but-btn:active:focus{
+    background: #3358f4 !important;
+    background-color: #3358f4 !important;
+    border: 1px solid #3358f4 !important;
+    color: white !important;
+  }
   
   .wl-input {
     /* min-width: 100% !important; */

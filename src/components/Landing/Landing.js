@@ -1,15 +1,21 @@
 import React, { Component } from 'react';
 import './Landing.css';
+// import '../../assets/demo/demo.css'
 import "../../assets/css/custom-styles.css"
 import { Button, FormGroup, Form, Input, Alert } from 'reactstrap';
 import axios from 'axios';
 import search from '../../assets/img/search.svg'
 import money from '../../assets/img/dollar-sign.svg'
 import chart from '../../assets/img/bar-chart.svg'
-import chrome from '../../assets/img/FlipZen_mockup_v0.png'
+// import chrome0 from '../../assets/img/FlipZen_mockup_v0.png'
+import chrome1 from '../../assets/img/FlipZen_mockup_v1.png'
+import nate from '../../assets/img/nate_fz.png'
+import lauren from '../../assets/img/lauren_fz_2.png'
 import bell from '../../assets/img/bell.svg'
 import db from '../../assets/img/database.svg'
 import cloud from '../../assets/img/cloud.svg'
+// import * as Scroll from 'react-scroll';
+import { animateScroll as scroll} from 'react-scroll'
 
 
 class LandingComponent extends Component {
@@ -33,6 +39,10 @@ class LandingComponent extends Component {
 
   onDismiss() {
     this.setState({ visible: false });
+  }
+
+  scrollToTop() {
+    scroll.scrollToTop();
   }
 
   handleChange(e) {
@@ -232,27 +242,27 @@ class LandingComponent extends Component {
 
             <div class="row mt-5 justify-content-center">
               <div class="col-10">
-                <img alt="mockup pic" class="img-fluid f-box-shadow" src={chrome}/>
+                <img alt="mockup pic" class="img-fluid f-box-shadow" src={chrome1}/>
               </div>
             </div>
 
             <div class="row text-center mt-5">
               <div class="col-12 col-sm-4">
                 <img alt="cloud icon" class="fdb-icon" src={cloud}/>
-                <h3><strong>Hosted in the cloud</strong></h3>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts</p>
+                <h3><strong>Cloud hosting</strong></h3>
+                <p>All you need is a computer with an internet connection to get started.</p>
               </div>
 
               <div class="col-12 col-sm-4 pt-4 pt-sm-0">
                 <img alt="db icon" class="fdb-icon" src={db}/>
-                <h3><strong>Save searches</strong></h3>
-                <p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. </p>
+                <h3><strong>Saved searches</strong></h3>
+                <p>Keep your frequent searches one click away by saving them to your dashboard.</p>
               </div>
 
               <div class="col-12 col-sm-4 pt-4 pt-sm-0">
                 <img alt="bell icon" class="fdb-icon" src={bell}/>
-                <h3><strong>Set alerts</strong></h3>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country,</p>
+                <h3><strong>Alerts</strong></h3>
+                <p>Know when flip opportunities arise on products you're interested in.</p>
               </div>
             </div>
           </div>
@@ -268,7 +278,7 @@ class LandingComponent extends Component {
 
             <div class="row align-items-center justify-content-center">
               <div class="col-8 col-sm-6 col-md-2 col-lg-3 col-xl-2 mt-4 mt-md-0 mr-auto mr-md-0">
-                  <img alt="person" class="img-fluid rounded-circle" src="https://cdn.jsdelivr.net/gh/froala/design-blocks@2.0.1/dist/imgs//people/1.jpg"/>
+                  <img alt="person" class="img-fluid rounded-circle" src={lauren}/>
                 </div>
                 <div class="col-12 col-md-10 col-lg-8">
                   <p class="lead">
@@ -282,7 +292,7 @@ class LandingComponent extends Component {
 
               <div className="row align-items-center justify-content-center mt-5">
                 <div class="col-8 col-sm-6 col-md-2 col-lg-3 col-xl-2 mt-4 mt-md-0 mr-auto mr-md-0">
-                  <img alt="person" class="img-fluid rounded-circle" src="https://cdn.jsdelivr.net/gh/froala/design-blocks@2.0.1/dist/imgs//people/1.jpg"/>
+                  <img alt="person" class="img-fluid rounded-circle" src={nate}/>
                 </div>
                 <div class="col-12 col-md-2 col-lg-8">
                   <p class="lead">
@@ -311,15 +321,15 @@ class LandingComponent extends Component {
                 <div class="bg-white pb-5 pt-5 pl-4 pr-4 rounded-left">
                   <h2 class="font-weight-light">Hobby</h2>
 
-                  <p class="h1 mt-5 mb-5"><strong>$19</strong> <span class="h4">/month</span></p>
+                  <p class="h1 mt-5 mb-5"><strong>$9</strong> <span class="h4">/month</span></p>
 
                   <ul class="text-left">
-                    <li>Item 1</li>
-                    <li>Item 2</li>
-                    <li>Item 3</li>
+                    <li>3 alerts</li>
+                    <li>2 saved searches</li>
+                    <li>3 - 5 day support request turnaround</li>
                   </ul>
 
-                  <p class="text-center pt-4"><a href="https://www.froala.com" class="btn btn-outline-dark">Choose Plan</a></p>
+                  <p class="text-center pt-4"><button class="btn buy-btn" onClick={this.scrollToTop}>Request access</button></p>
                 </div>
               </div>
 
@@ -330,12 +340,12 @@ class LandingComponent extends Component {
                   <p class="h1 mt-5 mb-5"><strong>$49</strong> <span class="h4">/month</span></p>
 
                   <ul class="text-left">
-                    <li>Item 1</li>
-                    <li>Item 2</li>
-                    <li>Item 3</li>
+                    <li>15 alerts</li>
+                    <li>10 saved searches</li>
+                    <li>1 - 2 day support request turnaround</li>
                   </ul>
 
-                  <p class="text-center pt-4"><a href="https://www.froala.com" class="btn btn-primary btn-shadow">Choose Plan</a></p>
+                  <p class="text-center pt-4"><button class="btn wl-btn" style={{color:"white"}} onClick={this.scrollToTop}>Request access</button></p>
                 </div>
               </div>
 
@@ -343,15 +353,18 @@ class LandingComponent extends Component {
                 <div class="bg-white pb-5 pt-5 pl-4 pr-4 rounded-right">
                   <h2 class="font-weight-light">Enterprise</h2>
 
-                  <p class="h1 mt-5 mb-5"><strong clasName="color-black">$99</strong> <span class="h4">/month</span></p>
+                  <p class="h1 mt-5 mb-5"><strong clasName="color-black">Custom</strong></p>
 
                   <ul class="text-left">
-                    <li>Item 1</li>
+                  <br/>
+                  <br/>
+                  <br/>
+                    {/* <li>Item 1</li>
                     <li>Item 2</li>
-                    <li>Item 3</li>
+                    <li>Item 3</li> */}
                   </ul>
 
-                  <p class="text-center pt-4"><a href="https://www.froala.com" class="btn btn-outline-dark">Choose Plan</a></p>
+                  <p class="text-center pt-4"><button class="btn buy-btn" onClick={this.scrollToTop}>Request access</button></p>
                 </div>
               </div>
 
