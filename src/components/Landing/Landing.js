@@ -201,14 +201,14 @@ class LandingComponent extends Component {
           <div class="container">
           <div class="row text-center">
             <div class="col-12">
-            <h3 className="sub-copy h3-color-black" style={{color:"black !important"}}>Our software works on the internet's top marketplaces<span style={{fontWeight:"lighter", color:"#7f7f7f"}}><super>*</super></span></h3>
+            <h3 className="sub-copy h3-color-grey" style={{color:"#7f7f7f"}}>Our software works on the internet's top marketplaces<span style={{fontWeight:"lighter", color:"#7f7f7f"}}><super>*</super></span></h3>
             </div>
           </div>
             <div class="row justify-content-center text-center">
               <div class="col">
-                <img alt="image" height="40" class="ml-3 mr-3 mb-2 mt-2" src={amzn}/>
-                <img alt="image" height="40" class="ml-3 mr-3 mb-2 mt-2" src={ebay}/>
-                <img alt="image" height="40" class="ml-3 mr-3 mb-2 mt-2" src={cl}/>
+                <img alt="amazon pic" height="40" class="ml-3 mr-3 mb-2 mt-2" src={amzn}/>
+                <img alt="ebay pic" height="40" class="ml-3 mr-3 mb-2 mt-2" src={ebay}/>
+                <img alt="craigslist pic" height="40" class="ml-3 mr-3 mb-2 mt-2" src={cl}/>
               </div>
             </div>
           </div>
@@ -228,7 +228,7 @@ class LandingComponent extends Component {
                   <img alt="search icon" class="fdb-icon" src={search}/>
                   <h2>1: Search</h2>
                   {/* <p>Far far away, behind the word mountains, far from the countries.</p> */}
-                  <p>Search multiple online marketplaces at once and view the results in a single dashboard.</p>
+                  <p> Save time by searching multiple online marketplaces at once and viewing the results in a single dashboard.</p>
                 </div>
               </div>
 
@@ -237,7 +237,7 @@ class LandingComponent extends Component {
                   <img alt="chart icon" class="fdb-icon" src={chart}/>
                   <h2>2: Analyze</h2>
                   {/* <p>Use FlipZen's data analysis toolsMean, median, mode, standard deviation, and supply/demand data.</p> */}
-                  <p>Take a data-driven approach to flipping by leverging FlipZen's built-in data analysis tools.</p>
+                  <p>Gain insight and take a data-driven approach to flipping by leverging FlipZen's built-in data analysis tools.</p>
                 </div>
               </div>
 
@@ -245,7 +245,7 @@ class LandingComponent extends Component {
                 <div className="fdb-box fdb-touch color-black">
                   <img alt="money icon" className="fdb-icon" src={money}/>
                   <h2 classname="color-black">3: Win</h2>
-                  <p>Identify more high quality arbitrage opportunities in less time and with less effort.</p>
+                  <p>Work smarter by identifying more high quality arbitrage opportunities in less time and with less effort.</p>
                 </div>
               </div>
             </div>
@@ -289,20 +289,23 @@ class LandingComponent extends Component {
             <div class="row text-center mt-5">
               <div class="col-12 col-sm-4">
                 <img alt="cloud icon" class="fdb-icon" src={cloud}/>
-                <h3><strong>Cloud hosting</strong></h3>
-                <p>All you need is a computer with an internet connection to get started.</p>
+                <h3 style={{marginBottom:"0"}}><strong>Cloud hosting</strong></h3>
+                <p>Get up an running quickly and easily</p>
+                {/* <p>All you need is a computer with an internet connection to get started.</p> */}
               </div>
 
               <div class="col-12 col-sm-4 pt-4 pt-sm-0">
                 <img alt="db icon" class="fdb-icon" src={db}/>
-                <h3><strong>Saved searches</strong></h3>
-                <p>Keep your frequent searches one click away by saving them to your dashboard.</p>
+                <h3 style={{marginBottom:"0"}}><strong>Saved searches</strong></h3>
+                <p>Monitor items of interest with ease</p>
+                {/* <p>Keep your frequent searches one click away by saving them to your dashboard.</p> */}
               </div>
 
               <div class="col-12 col-sm-4 pt-4 pt-sm-0">
                 <img alt="bell icon" class="fdb-icon" src={bell}/>
-                <h3><strong>Alerts</strong></h3>
-                <p>Know when flip opportunities arise on products you're interested in.</p>
+                <h3 style={{marginBottom:"0"}}><strong>Alerts</strong></h3>
+                <p>Never miss an arbitrage opportunity</p>
+                {/* <p>Seize opportinities quickly by knowing when flip opportunities arise on products you're interested in.</p> */}
               </div>
             </div>
           </div>

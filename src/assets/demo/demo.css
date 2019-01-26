@@ -275,6 +275,10 @@ h3.h3-color-black {
   color: black !important;
 }
 
+h3.h3-color-grey {
+  color: #7f7f7f !important;
+}
+
 
 /* .clipped {
   clip-path: polygon(100% 0%, 100% 70%, 50% 90%, 50% 90%, 0 70%, 0 0);
