@@ -9,13 +9,17 @@ import money from '../../assets/img/dollar-sign.svg'
 import chart from '../../assets/img/bar-chart.svg'
 // import chrome0 from '../../assets/img/FlipZen_mockup_v0.png'
 import chrome1 from '../../assets/img/FlipZen_mockup_v1.png'
-import nate2 from '../../assets/img/nate_fz_2.png'
-import lauren2 from '../../assets/img/lauren_fz_2.png'
+import nate2 from '../../assets/img/nate3.png'
+import lauren2 from '../../assets/img/lauren_fz.png'
 // import mike from '../../assets/img/mike.jpg'
 // import emily from '../../assets/img/emilyz.jpg'
 import bell from '../../assets/img/bell.svg'
 import db from '../../assets/img/database.svg'
 import cloud from '../../assets/img/cloud.svg'
+import amzn from '../../assets/img/amazon.svg'
+import ebay from '../../assets/img/ebay.svg'
+import cl from '../../assets/img/craigslist.svg'
+
 // import * as Scroll from 'react-scroll';
 import { animateScroll as scroll} from 'react-scroll'
 
@@ -161,10 +165,18 @@ class LandingComponent extends Component {
 
         <div className="jumbotron jumbotron-fluid vertical-center landing-jumbo clipped" style={{height:"80vh", marginBottom:"0px"}}>
           <div className="container">
-            <h1 className="display-4 main-copy" style={{textAlign:"center", color:'#FFFFFF', textTransform:'uppercase', fontSize:"3.5rem"}}>Find underpriced products<br/>being sold online</h1>
+            {/* <h1 className="display-4 main-copy" style={{textAlign:"center", color:'#FFFFFF', textTransform:'uppercase', fontSize:"3.5rem"}}>Find underpriced products<br/>being sold online</h1> */}
+            <h1 className="display-4 main-copy" style={{textAlign:"center", color:'#FFFFFF', textTransform:'uppercase', fontSize:"3.5rem"}}>Supercharge your online arbitrage</h1>
             {/* <h3 className="sub-copy" style={{textAlign:"center", color:'#FFFFFF'}}>Product price analytics for buy-and-sell enterprises</h3> */}
-            <h3 className="sub-copy" style={{textAlign:"center", color:'#FFFFFF'}}>We collect and analyze product listings from online marketplaces <br/>to create a dashboard that makes finding your next flip easy.</h3>
+            <h3 className="main -copy" style={{textAlign:"center", color:'#FFFFFF'}}>We collect and analyze product listings from online marketplaces <br/>to create a dashboard that makes finding your next flip easy.</h3>
             {/* <h3 className="sub-copy" style={{textAlign:"center", color:'#FFFFFF'}}>It's like Kayak – for products.</h3> */}
+            {/* <div class="row justify-content-center text-center mt-2">
+              <div class="col">
+                <img alt="image" height="40" class="ml-3 mr-3 mb-2 " src={amzn}/>
+                <img alt="image" height="40" class="ml-3 mr-3 mb-2 " src={ebay}/>
+                <img alt="image" height="40" class="ml-3 mr-3 mb-2 " src={cl}/>
+              </div>
+            </div> */}
             <Form inline autoComplete="off" className="wl-form" onSubmit={this.handleSubmit} id="lead-form" style={{display: 'flex', justifyContent: 'center'}}>
               <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
                 {/* <Label for="exampleEmail" className="mr-sm-2">Email</Label> */}
@@ -173,8 +185,34 @@ class LandingComponent extends Component {
               {/* <Button className="wl-btn" disabled={this.state.disabled}> {this.state.disabled ? 'Sending...' : 'Get Started'}</Button> */}
               <Button className="wl-btn" disabled={this.state.disabled}> {this.state.disabled ? 'Sending...' : 'Request access'}</Button>
             </Form>
+
+            {/* <div class="row justify-content-center text-center mt-5">
+              <div class="col">
+              <h3 className="sub-copy" style={{textAlign:"center", color:'#FFFFFF', marginBottom:"0.5rem"}}>Search the internets top marketplaces</h3>
+                <img alt="image" height="40" class="ml-3 mr-3 mb-2 " src={amzn}/>
+                <img alt="image" height="40" class="ml-3 mr-3 mb-2 " src={ebay}/>
+                <img alt="image" height="40" class="ml-3 mr-3 mb-2 " src={cl}/>
+              </div>
+            </div> */}
           </div>
         </div>
+
+        <section class="fdb-block" data-block-type="testimonials" data-id="1" draggable="true" style={{background:"#f8f9fa", padding:"3.5rem 0"}}>
+          <div class="container">
+          <div class="row text-center">
+            <div class="col-12">
+            <h3 className="sub-copy h3-color-black" style={{color:"black !important"}}>Our software works on the internet's top marketplaces<span style={{fontWeight:"lighter", color:"#7f7f7f"}}><super>*</super></span></h3>
+            </div>
+          </div>
+            <div class="row justify-content-center text-center">
+              <div class="col">
+                <img alt="image" height="40" class="ml-3 mr-3 mb-2 mt-2" src={amzn}/>
+                <img alt="image" height="40" class="ml-3 mr-3 mb-2 mt-2" src={ebay}/>
+                <img alt="image" height="40" class="ml-3 mr-3 mb-2 mt-2" src={cl}/>
+              </div>
+            </div>
+          </div>
+        </section>
 
         {/* <div className="jumbotron jumbotron-fluid vertical-center" style={{height:"88vh", marginBottom:"0px", background:"red"}}> */}
         <section class="fdb-block fp-active" data-block-type="features" data-id="3" draggable="true" style={{padding:"3.5rem 0"}}>
@@ -188,7 +226,7 @@ class LandingComponent extends Component {
               <div class="col-12 col-md-8 m-auto col-lg-4">
                 <div class="fdb-box fdb-touch color-black">
                   <img alt="search icon" class="fdb-icon" src={search}/>
-                  <h2>Search</h2>
+                  <h2>1: Search</h2>
                   {/* <p>Far far away, behind the word mountains, far from the countries.</p> */}
                   <p>Search multiple online marketplaces at once and view the results in a single dashboard.</p>
                 </div>
@@ -197,7 +235,7 @@ class LandingComponent extends Component {
               <div class="col-12 col-md-8 m-auto col-lg-4 pt-5 pt-lg-0">
                 <div class="fdb-box fdb-touch color-black">
                   <img alt="chart icon" class="fdb-icon" src={chart}/>
-                  <h2>Analyze</h2>
+                  <h2>2: Analyze</h2>
                   {/* <p>Use FlipZen's data analysis toolsMean, median, mode, standard deviation, and supply/demand data.</p> */}
                   <p>Take a data-driven approach to flipping by leverging FlipZen's built-in data analysis tools.</p>
                 </div>
@@ -206,7 +244,7 @@ class LandingComponent extends Component {
               <div className="col-12 col-md-8 m-auto col-lg-4 pt-5 pt-lg-0">
                 <div className="fdb-box fdb-touch color-black">
                   <img alt="money icon" className="fdb-icon" src={money}/>
-                  <h2 classname="color-black">Win</h2>
+                  <h2 classname="color-black">3: Win</h2>
                   <p>Identify more high quality arbitrage opportunities in less time and with less effort.</p>
                 </div>
               </div>
@@ -378,8 +416,9 @@ class LandingComponent extends Component {
           </div>
         </section>
         {/* Footer */}
-        <div className="row" style={{background: "#3358f4", textAlign: "center", color:"#FFFFFF", height:"8vh", lineHeight: "8vh", maxWidth:"100vw", margin:"0px"}}>
+        <div className="row" style={{background: "#3358f4", textAlign: "center", color:"#FFFFFF", height:"8vh", lineHeight: "4vh", maxWidth:"100vw", margin:"0px"}}>
           <div className="col-12">&copy;  2019 FlipZen, All rights reserved</div>
+          <div className="col-12">FlipZen has no affiliation with Amazon, eBay, or Craigslist.</div>
         </div>
         
         {/* </div> */}
