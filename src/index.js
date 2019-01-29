@@ -23,7 +23,7 @@ import { Router, Route, Switch, Redirect } from "react-router-dom";
 //import AdminLayout from "./layouts/Admin/Admin.jsx";
 //import RTLLayout from "./layouts/RTL/RTL.jsx";
 import LandingComponent from './components/Landing/Landing'
-//import Login from './components/Login/Login'
+// import Login from './components/Login/Login'
 
 import "./assets/scss/black-dashboard-react.scss";
 import "./assets/demo/demo.css";

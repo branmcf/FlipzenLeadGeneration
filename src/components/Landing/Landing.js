@@ -147,11 +147,11 @@ class LandingComponent extends Component {
               </li> */}
               {/* <li className="nav-item">
                 <a className="nav-link" href="">Sign up</a>
-              </li>
-              <li className="nav-item">
+              </li> */}
+              {/* <li className="nav-item">
                 <a className="nav-link" href="/login">Login</a>
-              </li>
-              <li className="nav-item">
+              </li> */}
+              {/* <li className="nav-item">
                 <a className="nav-link" href="/search/dashboard">Demo</a>
               </li> */}
             </ul>
@@ -320,12 +320,12 @@ class LandingComponent extends Component {
             </div>
 
             <div class="row align-items-center justify-content-center">
-              <div class="col-8 col-sm-6 col-md-2 col-lg-3 col-xl-2 mt-4 mt-md-0 mr-auto mr-md-0">
+              <div class="col-8 col-sm-6 col-md-2 col-lg-3 col-xl-2 mt-4 mt-md-0 mr-md-0">
                   <img alt="person" class="img-fluid rounded-circle" src={lauren2}/>
                 </div>
                 <div class="col-12 col-md-10 col-lg-8">
                   <p class="lead">
-                  I like to go to yard sales on the weekends to find clothes for my vintage store but sometimes I have trouble determining the market value of an item on the spot. FlipZen gives me a comprehensive overview of the market value in seconds which has really helped my business! 
+                  I like to go to yard sales on the weekends to find clothes for my vintage store but sometimes I have trouble determining the market value of an item on the spot. FlipZen gives me a comprehensive overview of the market value of an item within seconds which has really helped my business! 
                   </p>
 
                   <p class="lead"><strong>Lauren Williams</strong> <em class="ml-4">Alpha release user</em></p>
@@ -334,12 +334,12 @@ class LandingComponent extends Component {
 
 
               <div className="row align-items-center justify-content-center mt-5">
-                <div class="col-8 col-sm-6 col-md-2 col-lg-3 col-xl-2 mt-4 mt-md-0 mr-auto mr-md-0">
+                <div class="col-8 col-sm-6 col-md-2 col-lg-3 col-xl-2 mt-4 mt-md-0 mr-md-0">
                   <img alt="person" class="img-fluid rounded-circle" src={nate2}/>
                 </div>
                 <div class="col-12 col-md-2 col-lg-8">
                   <p class="lead">
-                    I used to use Microsoft Excel to keep track of product prices and perform calculations but I hated having to manage and update the spreadsheet. FlipZen gives me most of the things that led me to use Excel in the first place without the hassle so I'd definitely recommend it.
+                    I used to use Microsoft Excel to keep track of product prices and perform calculations but I hated having to manage and update the spreadsheet. FlipZen gives me most of the things that led me to use Excel but without the hassle so I'd definitely recommend it.
                   </p>
 
                   <p class="lead"><strong>Nathaniel Mendoza</strong> <em class="ml-4">Alpha release user</em></p>

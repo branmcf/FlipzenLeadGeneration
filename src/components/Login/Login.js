@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import { Button, FormGroup, Form, Input, Card, CardFooter, CardBody } from 'reactstrap';
+// import { Button, FormGroup, Form, Input, Card, CardFooter, CardBody } from 'reactstrap';
 
 // used for making the prop types of this component
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
 
 import axios from 'axios';
 import '../../assets/css/login.css'
@@ -66,7 +66,7 @@ class Login extends Component {
             <div className="container-fluid" style={{padding:"0px"}}>
                 <nav className="navbar navbar-expand-lg navbar-dark" style={{color: "white", height: "7vh", background:"#FFFFFF"}}>
                     <img src="/docs/4.0/assets/brand/bootstrap-solid.svg" width="30" height="30" className="d-inline-block align-top" alt=""/>
-                    <a className="navbar-brand" href="/" style={{color: "#3358f4"}}>Flipzen</a>
+                    <a className="navbar-brand" href="/" style={{color:"white", fontSize:"1.5rem"}}>Flipzen</a>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
@@ -81,7 +81,7 @@ class Login extends Component {
                         </ul>
                     </div>
                 </nav>
-                <div className="jumbotron jumbotron-fluid login-jumbo" style={{padding:"0px"}}>
+                {/* <div className="jumbotron jumbotron-fluid login-jumbo" style={{padding:"0px"}}>
                     <div className="container">
                         <div className="Aligner">
                             <div class="Aligner-item">
@@ -93,7 +93,7 @@ class Login extends Component {
                                 <Input type="email" name="email" id="wlEmail" placeholder="Email" className="login-input" disabled={this.state.disabled} value={this.state.email} onChange={this.handleChange} />
                                 <Input type="password" name="email" id="wlEmail" placeholder="Password" className="login-input" disabled={this.state.disabled} value={this.state.password} onChange={this.handleChange} />
                                 <br></br>
-                                {/* <Button className="wl-btn" disabled={this.state.disabled}> {this.state.disabled ? 'Logging in...' : 'Login'}</Button> */}
+                                <Button className="wl-btn" disabled={this.state.disabled}> {this.state.disabled ? 'Logging in...' : 'Login'}</Button>
                             </FormGroup>
                             </Form>  
                             </CardBody>
@@ -102,7 +102,70 @@ class Login extends Component {
                             </div>
                         </div>
                     </div>
-                </div>     
+                </div>      */}
+                <section class="fdb-block fp-active" data-block-type="forms" data-id="1" draggable="true">
+                  <div class="container">
+                    <div class="row justify-content-center">
+                      <div class="col-12 col-md-8 col-lg-7 col-md-5 text-center" style={{zIndex: "10000"}}>
+                        <div class="fdb-box fdb-touch">
+                          <div class="row">
+                            <div class="col fr-box fr-inline" style={{zIndex: "10000"}}>
+                              <div class="fr-wrapper" dir="auto">
+                                <div class="fr-element fr-view" contenteditable="true" dir="auto" spellcheck="true">
+                                  <h1>Login</h1>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col mt-4 fr-box fr-inline" style={{zIndex: "10000"}}>
+                              <div class="fr-wrapper" dir="auto">
+                                <div class="fr-element fr-view" contenteditable="true" dir="auto" spellcheck="true">
+                                  <p>
+                                    <input type="text" class="form-control" placeholder="Name" value=""/>
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row mt-4">
+                            <div class="col fr-box fr-inline" style={{zIndex: "10000"}}>
+                              <div class="fr-wrapper" dir="auto">
+                                <div class="fr-element fr-view" contenteditable="true" dir="auto" spellcheck="true">
+                                  <p>
+                                    <input type="text" class="form-control" placeholder="Email" value=""/>
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row mt-4">
+                            <div class="col fr-box fr-inline" style={{zIndex: "10000"}}>
+                              <div class="fr-wrapper" dir="auto">
+                                <div class="fr-element fr-view" contenteditable="true" dir="auto" spellcheck="true">
+                                  <p class="text-right">
+                                    <a href="https://www.froala.com">Already have an account?</a>
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row mt-4">
+                            <div class="col fr-box" style={{zIndex: "10000"}}>
+                              <div class="fr-wrapper" dir="auto">
+                                <div class="fr-element fr-view" contenteditable="true" dir="auto" spellcheck="true">
+                                  <p>
+                                    <button class="btn btn-primary" type="button">Submit</button>
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
                 <div className="row" style={{background: "#FFFFFF", textAlign: "center", color:"#3358f4", height:"5vh", lineHeight: "5vh", maxWidth:"100vw", margin:"0px"}}>
                     <div className="col-12">&copy;  2019 FlipZen, All rights reserved</div>
                 </div>          
@@ -116,7 +179,7 @@ class Login extends Component {
 
 export default Login;
 
-{/* <Form>
+/* <Form>
 <FormGroup>
   <Label for="exampleEmail">Email</Label>
   <Input type="email" name="email" id="exampleEmail" placeholder="with a placeholder" />
@@ -188,4 +251,4 @@ export default Login;
 </Form>
 );
 }
-} */}
+} */
