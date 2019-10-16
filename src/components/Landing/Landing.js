@@ -83,8 +83,8 @@ class LandingComponent extends Component {
     }
 
     try {
-      let result = await axios.post('https://flipzen-api.herokuapp.com/addLead', this.state);
-      // let result = await axios.post('http://localhost:5000/addLead', this.state);
+      // let result = await axios.post('https://flipzen-api.herokuapp.com/addLead', this.state);
+      let result = await axios.post('http://localhost:5000/addLead', this.state);
       if (result.status === 200){
         this.setState({ showSuccessAlert: true })
         this.setState({ disabled: false })
@@ -162,8 +162,8 @@ class LandingComponent extends Component {
         {this.state.showFailureAlert && this.renderFailureAlert()}
         {this.state.showFailureAlert2 && this.renderFailureAlert2()}
 
-
-        <div className="jumbotron jumbotron-fluid vertical-center landing-jumbo clipped" style={{height:"80vh", marginBottom:"0px"}}>
+        <section className="fdb-block" style={{marginTop: "0px", padding:"0px", maxHeight:"670px"}}>
+        <div className="jumbotron jumbotron-fluid vertical-center landing-jumbo" style={{marginBottom:"0px", maxHeight:"100%"}}>
           <div className="container">
             {/* <h1 className="display-4 main-copy" style={{textAlign:"center", color:'#FFFFFF', textTransform:'uppercase', fontSize:"3.5rem"}}>Find underpriced products<br/>being sold online</h1> */}
             <h1 className="display-4 main-copy" style={{textAlign:"center", color:'#FFFFFF', textTransform:'uppercase', fontSize:"3.5rem"}}>Supercharge your online arbitrage</h1>
@@ -196,6 +196,7 @@ class LandingComponent extends Component {
             </div> */}
           </div>
         </div>
+        </section>
 
         <section class="fdb-block" data-block-type="testimonials" data-id="1" draggable="true" style={{background:"#f8f9fa", padding:"3.5rem 0"}}>
           <div class="container">
